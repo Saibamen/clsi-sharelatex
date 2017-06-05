@@ -1,0 +1,7 @@
+version: '2'
+services:
+    clsi-sharelatex:
+        build:
+          context: .
+        image: orx0r/clsi-sharelatex:latest
+
