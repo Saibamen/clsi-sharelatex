@@ -9,6 +9,6 @@ Usage
 -----
 
 ```
-docker pull Saibamen/clsi-sharelatex
-docker run -p3013:3013 -d Saibamen/clsi-sharelatex
+docker pull saibamen/clsi-sharelatex
+docker run -p3013:3013 -d saibamen/clsi-sharelatex
 ```
