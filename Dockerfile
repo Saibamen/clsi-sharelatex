@@ -1,6 +1,6 @@
 FROM node:10.19.0
 
-#RUN apt-get update && apt-get install -y python git-core build-essential zlib1g-dev latexmk texlive-full
+RUN apt-get update && apt-get install -y python git-core build-essential zlib1g-dev latexmk texlive-full
 
 RUN git clone https://github.com/overleaf/clsi.git /app
 
@@ -13,7 +13,6 @@ WORKDIR /app
 RUN npm install
 
 RUN sed -i 's/localhost/0.0.0.0/g' config/settings.defaults.js
-
 RUN mkdir -p /app/cache /app/compiles /app/db \
 && chown node:node /app/cache /app/compiles /app/db
 
